@@ -1,4 +1,4 @@
-#View this project in Vercel:
+# View this project in Vercel:
 https://nu-ken-bank.vercel.app/
 
 # Getting Started with Create React App
