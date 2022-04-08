@@ -1,0 +1,72 @@
+.saldo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #E9ECEF;
+  border-radius: 4px;
+
+
+  width: 100%;
+
+  margin-top: 25px;
+
+  box-shadow: 0px 10px 30px #212529;
+
+}
+
+.saldo h2
+{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  width: 100%;
+  text-align: left;
+  margin-left: 24px;
+  margin-top: 18px;
+
+  color: #212529;
+}
+
+.saldo p
+{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+
+  width: 100%;
+  text-align: left;
+  margin-left: 24px;
+  margin-top: 18px;
+
+  color: #868E96;
+}
+
+.price 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: flex-end;
+}
+
+.price p
+{
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 100px;
+  height: 30px;
+  margin-right: 24px;
+
+  color: #FD377E;
+
+}

@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  color: white; 
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.main__dashboard
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aside__right__home
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+

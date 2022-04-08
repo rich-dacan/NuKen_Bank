@@ -1,0 +1,168 @@
+.container__list
+{
+  margin-top: 20px;
+  
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .7s;
+
+  border: solid 1px #E9ECEF;;
+}
+  .container__list:hover
+  {
+    box-shadow: 0px 0px 30px #212529;
+  }
+
+.resumo__financeiro
+{
+  text-align: center;
+  color: #111;
+}
+
+.list__filters
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: #111;
+
+  margin-left: -40px;
+
+  width: 100%;
+}
+
+.list__filters button
+{
+  background-color: #E9ECEF;
+  border: 1.4px solid #E9ECEF;
+  color: #868E96;
+  margin-left: 5px;
+  border-radius: 8px;
+  
+  font-size: 15px;
+  padding: 15px;
+}
+  .list__filters button:hover
+  {
+    background-color: #FD377E;
+    border: 1.4px solid #FD377E;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.list__transactions
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.container__list
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  height: 650px;
+  width: 90vw;
+
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+.vazio
+{
+  color: #868E96;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+
+}
+
+.noTransactions
+{
+  width: 500px;
+ 
+}
+
+.no__transactions h2
+{
+  font-size: 16px;
+  text-align: start;
+}
+
+.no__transactions img
+{
+  width: 90vw;
+}
+
+@media screen and (min-width: 768px){
+
+
+  .container__list
+  {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    height: 650px;
+    width: 650px;
+
+  }
+
+  .list__filters
+  {
+    width: 600px;
+  }
+
+  .resumo__financeiro
+  {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .noTransactions
+  {
+    position: absolute;
+  }
+
+  .no__transactions
+  {
+    width: 500px;
+    margin-bottom: 250px;
+
+  }
+
+  .no__transactions h2
+  {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  .no__transactions img
+  {
+    height: 250px;
+    margin-top: -20px;
+    margin-left: -120px;
+    width: 650px;
+
+  }
+
+}
+
+@media screen and (min-width: 1066px){
+
+  .container__list
+  {
+    margin-left: 100px;
+  }
+
+}

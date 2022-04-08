@@ -1,0 +1,32 @@
+.filters__container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.list__filters
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px){
+
+  .filters__container
+  {
+    max-width: 600px;
+    flex-wrap: nowrap;
+  }
+
+  .resumo__financeiro
+  {
+    width: 300px;
+    text-align: start;
+    margin-left: -30px;
+  }
+
+}
