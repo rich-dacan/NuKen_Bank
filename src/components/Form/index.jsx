@@ -1,7 +1,8 @@
 import './styles.css';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const Form = ({listTransactions, setListTransactions}) => {
+const Form = ({listTransactions, setListTransactions, filteredTransactions, setFilteredTransactions}) => {
 
   const [inputDescription, setInputDescription]   = useState('');
   const [inputValue, setInputValue]               = useState(0);
@@ -20,10 +21,13 @@ const Form = ({listTransactions, setListTransactions}) => {
       newTransaction.id           = id;
 
       setListTransactions([...listTransactions, newTransaction]);
+      setFilteredTransactions([...filteredTransactions, newTransaction]);
       setInputDescription('');
       setInputValue('');
       setId(id + 1);
     }
+
+    toast.success('Transação adicionada com sucesso!')
 
   }
 
@@ -70,8 +74,8 @@ const Form = ({listTransactions, setListTransactions}) => {
             value={inputType}
             onChange={(e) => setInputType(e.target.value)}
           >
-            <option className='select__in'    value="entrada" > Entrada   </option>
-            <option className='select__out'   value="saida"   > Despesa   </option>
+            <option className='select__in'    value="Entrada" > Entrada   </option>
+            <option className='select__out'   value="Saída"   > Despesa   </option>
 
           </select>
 

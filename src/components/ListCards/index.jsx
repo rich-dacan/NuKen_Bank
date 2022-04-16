@@ -2,7 +2,7 @@ import './styles.css';
 import NoCard from '../../assets/image/NoCard.svg';
 import Card from '../Card';
 
-const ListCards = ({ listTransactions }) => {
+const ListCards = ({ listTransactions, setListTransactions, filteredTransactions, setFilteredTransactions }) => {
 
   return (
 
@@ -12,11 +12,7 @@ const ListCards = ({ listTransactions }) => {
 
         { listTransactions.length > 0 ? (
 
-          listTransactions.map(({description, value, type}, index) => (
-
-          <Card description={description} type={type} value={value} key={index}/>
-
-        ))
+          <Card key={listTransactions.id} listTransactions={listTransactions} setListTransactions={setListTransactions} filteredTransactions={filteredTransactions} setFilteredTransactions={setFilteredTransactions} />
 
         ) : (
 

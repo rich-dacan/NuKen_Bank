@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 88px;
   background: #F8F9FA;
@@ -22,9 +23,28 @@ header button
   height: 40px;
 
 }
-header button:hover
-{
-  cursor: pointer;
-  background-color: #868E96;
-  color: #E9ECEF;
+  header button:hover
+  {
+    cursor: pointer;
+    background-color: #868E96;
+    color: #E9ECEF;
+  }
+
+@media  screen and (min-width: 1137px ) {
+
+  .main__header 
+  {
+    justify-content: space-between;
+  }
+
+  header img
+  {
+    margin-left: 100px
+  }
+
+  header button
+  {
+    margin-right: 100px
+  }
+  
 }

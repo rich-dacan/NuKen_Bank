@@ -7,11 +7,11 @@ const TotalMoney = ({ listTransactions }) => {
 
     useEffect(() => {
 
-      if (listTransactions?.length > 0) {
+      if (listTransactions) {
 
         const totalValue = listTransactions.reduce((acc, {value, type}) => {
 
-          if (type ===  'Entrada') {
+          if (type ===  'Entrada' || type === 'entrada') {
             
             return Number(value) + acc;
 

@@ -5,15 +5,15 @@
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   transition: all ease .7s;
 
-  border: solid 1px #E9ECEF;;
+  border: solid 1px #E9ECEF;
+  border-radius: 4px;
 }
   .container__list:hover
   {
-    box-shadow: 0px 0px 30px #212529;
+    border: solid 1px #212529;
   }
 
 .resumo__financeiro
@@ -25,7 +25,7 @@
 .list__filters
 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   color: #111;
@@ -57,7 +57,6 @@
 .list__transactions
 {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   
 }
@@ -71,10 +70,15 @@
 
 }
 
-::-webkit-scrollbar
-{
-  width: 10px;
-}
+  .container__list::-webkit-scrollbar
+  {
+    width: 5px;
+  }
+  .container__list::-webkit-scrollbar-thumb
+  {
+    background-color: #FD377E;
+    border-radius: 30px;
+  }
 
 .vazio
 {
@@ -115,6 +119,12 @@
 
     height: 650px;
     width: 650px;
+
+  }
+
+  .filters__container p
+  {
+  margin-left: 50px;
 
   }
 

@@ -2,11 +2,19 @@ import './styles.css';
 import logo from '../../assets/image/nuKenzieHome.svg';
 import aside from '../../assets/image/home_aside.svg';
 
+import { motion } from 'framer-motion';
+
 const Home = ({logged}) => {
 
   return (
 
-    <>
+    <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+      transition={{duration:1}}
+    
+    >
 
       <main className='container'>
 
@@ -15,7 +23,8 @@ const Home = ({logged}) => {
           <img className='logo__nuKenzie' src={logo} alt="logo" />
           <h1  className='main__title'> Centralize o controle das suas finanças </h1>
           <p   className='p__home'> de forma rápida e segura </p>
-          <button onClick={logged} className='btn__start'>Iniciar</button>
+          
+          <button onClick={logged} className='btn__start'> Iniciar </button>
 
         </aside>
 
@@ -27,7 +36,7 @@ const Home = ({logged}) => {
 
       </main>
 
-    </>
+    </motion.div>
   )
 }
 export default Home;

@@ -6,6 +6,7 @@ form
   align-items: center;
 
   margin-top: 40px;
+  margin-left: 10px;
   padding: 25px;
   height: 351px;
   width: 70vw;
@@ -17,7 +18,7 @@ form
 }
   form:hover
   {
-    box-shadow: 0px 0px 30px #212529;
+    border: solid 1px #212529;
   }
 
 .description
@@ -43,6 +44,7 @@ form
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  transition: all ease .8s;
 }
 
 .example
@@ -92,6 +94,7 @@ form
   padding-right:15px;
 
   width: 30vw;
+  transition: all ease .8s;
 
 }
 
@@ -105,6 +108,8 @@ form
   height: 48px;
 
   cursor: pointer;
+
+  transition: all ease .8s;
   
 }
 .select__in
@@ -129,6 +134,7 @@ form button
   border-radius: 8px;
 
   opacity: 0.9;
+  transition: all ease .8s;
 }
   form button:hover
   {
@@ -140,7 +146,7 @@ form button
 
     form
     {
-       width: 363px;
+      width: 363px;
     }
 
     .input__description

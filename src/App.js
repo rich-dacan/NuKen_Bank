@@ -1,5 +1,9 @@
 import './App.css';
-import { useState } from 'react';
+import "animate.css/animate.min.css";
+
+import React from 'react';
+import { useState }      from 'react';
+
 import Home         from './pages/Home';
 import Header       from './components/Header';
 import Dashboard    from '../src/pages/Dashboard';
@@ -23,12 +27,9 @@ function App() {
           <Dashboard />
         </>
        : 
-        <Home logged={logged}/>   
-       
+        <Home logged={logged}/>          
        }
     </div>
-    
   );
 }
-
 export default App;
